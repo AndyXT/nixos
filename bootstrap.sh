@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+# Ensure nix-daemon is enabled and running
+sudo systemctl enable --now nix-daemon
+
 # Enable flakes in system nix.conf if not already set
 if ! grep -q "experimental-features" /etc/nix/nix.conf 2>/dev/null; then
   echo "Adding flakes to /etc/nix/nix.conf..."

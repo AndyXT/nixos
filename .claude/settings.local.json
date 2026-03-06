@@ -14,7 +14,9 @@
       "Bash(chmod +x:*)",
       "WebSearch",
       "WebFetch(domain:github.com)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(home-manager switch:*)",
+      "Bash(systemctl status:*)"
     ]
   }
 }
