@@ -16,7 +16,9 @@
       "WebFetch(domain:github.com)",
       "Bash(bash:*)",
       "Bash(home-manager switch:*)",
-      "Bash(systemctl status:*)"
+      "Bash(systemctl status:*)",
+      "Bash(grep:*)",
+      "Bash(./sync-check.sh)"
     ]
   }
 }
