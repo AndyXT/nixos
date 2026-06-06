@@ -21,3 +21,11 @@ done
 
 # Bootstrap home-manager using nix run (since it's not installed yet)
 nix run home-manager/master -- switch --flake "$HOME/nixos#axtreto"
+
+# Install picotool udev rules if available
+PICOTOOL_RULES="$(dirname "$(readlink -f "$(which picotool)")")/../etc/udev/rules.d/60-picotool.rules"
+if [ -f "$PICOTOOL_RULES" ]; then
+  echo "Installing picotool udev rules..."
+  sudo cp "$PICOTOOL_RULES" /etc/udev/rules.d/
+  sudo udevadm control --reload
+fi
