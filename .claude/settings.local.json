@@ -19,7 +19,10 @@
       "Bash(systemctl status:*)",
       "Bash(grep:*)",
       "Bash(./sync-check.sh)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Read(//nix/store/03dkps46n9h5n7bss8c13yqx3jqjjxss-pico-sdk-2.2.0/share/**)",
+      "Read(//nix/store/**)",
+      "Bash(cat /nix/store/0gak3iqswyhnbcfsjlpi6xh133h5vvry-picotool-2.2.0-a4/etc/udev/rules.d/*.rules)"
     ]
   }
 }

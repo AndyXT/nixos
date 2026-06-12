@@ -2,11 +2,15 @@
 
 {
   home.packages = with pkgs; [
+    clj-kondo
     ruff
     ty
     typst
     uv
     vim-full
+    universal-ctags
+    cscope
+    diffsitter
 
     # Rust with RISC-V target support
     (rust-bin.stable.latest.default.override {
