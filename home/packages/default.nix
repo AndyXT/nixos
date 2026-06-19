@@ -10,7 +10,7 @@
     vim-full
     universal-ctags
     cscope
-    diffsitter
+    difftastic
 
     # Rust with RISC-V target support
     (rust-bin.stable.latest.default.override {

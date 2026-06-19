@@ -9,9 +9,9 @@
       init.defaultBranch = "main";
       pull.rebase = true;
       credential.helper = "!/usr/bin/env gh auth git-credential";
-      diff.tool = "diffsitter";
+      diff.tool = "difftastic";
       difftool.prompt = false;
-      difftool.diffsitter.cmd = ''diffsitter "$LOCAL" "$REMOTE"'';
+      difftool.difftastic.cmd = ''difft "$LOCAL" "$REMOTE"'';
     };
   };
 }
